@@ -7,14 +7,20 @@
     <title>nextjs-learning</title>
   </head>
   <body>
-    <div>
-      <h5>Meet the</h5>
-      <h1>Engineers</h1>
-      <ul>
-        <li>A. Lovelace</li>
-        <li>G. Hopper</li>
-        <li>M. Hamilton</li>
-      </ul>
-    </div>
+    <div id="app"></div>
+
+    <script type="text/javascript">
+      const app = document.getElementById("app");
+
+      const header = document.createElement("h1");
+
+      const headerContent = document.createTextNode(
+        "Develop. Preview. Ship. 🚀"
+      );
+
+      header.appendChild(headerContent);
+
+      app.appendChild(header);
+    </script>
   </body>
 </html>
