@@ -1,10 +1,2 @@
-const func = (arr) => {
-  arr[0] = "Whaaaaaaaaat?";
-};
-
-const arr = [1, 2, 3, 4, 5, 45];
-
-console.log(arr[0]);
-func(arr);
-console.log(arr[0]);
-console.log(arr);
+const fac = (n) => (n < 2 ? 1 : n * fac(n - 1));
+console.log(fac(5));
