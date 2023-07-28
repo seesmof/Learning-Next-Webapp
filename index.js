@@ -1,13 +1,13 @@
-function callMe(name) {
-  return `Hello, ${name}!`;
-}
-
-const dontCall = (name) => {
-  console.log(`Hello, ${name}!`);
+const func = (obj) => {
+  obj.make = "BMW";
 };
 
-const square = (number) => number * number;
+const car = {
+  make: "Honda",
+  model: "Civic",
+  year: 2020,
+};
 
-console.log(square(2));
-console.log(callMe("Bruh"));
-dontCall("John");
+console.log(car.make);
+func(car);
+console.log(car.make);
