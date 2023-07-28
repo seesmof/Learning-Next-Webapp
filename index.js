@@ -1,13 +1,10 @@
-const func = (obj) => {
-  obj.make = "BMW";
+const func = (arr) => {
+  arr[0] = "Whaaaaaaaaat?";
 };
 
-const car = {
-  make: "Honda",
-  model: "Civic",
-  year: 2020,
-};
+const arr = [1, 2, 3, 4, 5, 45];
 
-console.log(car.make);
-func(car);
-console.log(car.make);
+console.log(arr[0]);
+func(arr);
+console.log(arr[0]);
+console.log(arr);
