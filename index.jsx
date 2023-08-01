@@ -1,16 +1,11 @@
-const app = document.getElementById("app");
-
-const Header = () => {
-  return <h1>Develop. Preview. Ship. 🚀</h1>;
-};
-
 const HomePage = () => {
+  const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
+
   return (
     <>
-      <h2>Home Page</h2>
-      <Header />
+      {names.map((name) => (
+        <p key={name}>{name}</p>
+      ))}
     </>
   );
 };
-
-ReactDOM.render(<HomePage />, app);
